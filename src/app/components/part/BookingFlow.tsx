@@ -2,7 +2,7 @@
 "use client";
 import React from "react";
 
-const Card: React.FC<React.PropsWithChildren<{}>> = ({ children }) => (
+const Card: React.FC<React.PropsWithChildren> = ({ children }) => (
   <div className="bg-white border border-[#1f6e7a] rounded-lg shadow-md p-6">
     {children}
   </div>
@@ -11,7 +11,11 @@ const Card: React.FC<React.PropsWithChildren<{}>> = ({ children }) => (
 export default function BookingFlow() {
   return (
     <section className={"py-16 bg-[#E6F8FF]"}>
-      <h2 className={"text-center text-2xl sm:text-3xl font-bold text-[#178FA0] mb-8"}>
+      <h2
+        className={
+          "text-center text-2xl sm:text-3xl font-bold text-[#178FA0] mb-8"
+        }
+      >
         {"Testimonial & Rating"}
       </h2>
 
@@ -55,7 +59,11 @@ export default function BookingFlow() {
         </div>
 
         {/* BOTTOM ROW: Step 4, Button, Step 5 */}
-        <div className={"mt-8 flex flex-col items-stretch sm:flex-row sm:items-center sm:justify-between gap-6"}>
+        <div
+          className={
+            "mt-8 flex flex-col items-stretch sm:flex-row sm:items-center sm:justify-between gap-6"
+          }
+        >
           {/* 4 */}
           <div className={"sm:w-1/3"}>
             <Card>
@@ -64,7 +72,9 @@ export default function BookingFlow() {
               </h3>
               <ul className={"text-[#1f6e7a] space-y-1 text-sm"}>
                 <li>{"– Confirm service, duration, and total cost"}</li>
-                <li>{"– Choose payment method (e-wallet, card, bank transfer)"}</li>
+                <li>
+                  {"– Choose payment method (e-wallet, card, bank transfer)"}
+                </li>
                 <li>{"– Enter promo code (optional)"}</li>
               </ul>
             </Card>
